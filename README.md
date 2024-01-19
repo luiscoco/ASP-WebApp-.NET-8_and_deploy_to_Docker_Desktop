@@ -251,6 +251,10 @@ docker run -d -p 8080:8080 --name myapp webapplication1
 
 We confirm the application is running in the endpoing: http://localhost:8080
 
+![image](https://github.com/luiscoco/ASP-WebApp-.NET-8_and_deploy_to_Docker_Desktop/assets/32194879/abe4693a-dc1a-4c6b-a417-85cc88701d80)
 
+We also see the running docker image in Docker Desktop
+
+![image](https://github.com/luiscoco/ASP-WebApp-.NET-8_and_deploy_to_Docker_Desktop/assets/32194879/c88615f9-4f46-4f18-92a3-ccbc59284839)
 
 
