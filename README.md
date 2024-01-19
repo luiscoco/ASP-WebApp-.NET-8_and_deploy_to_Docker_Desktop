@@ -24,7 +24,43 @@ We chose the new project main features
 
 ![image](https://github.com/luiscoco/ASP-WebApp-.NET-8_and_deploy_to_Docker_Desktop/assets/32194879/1213f16a-b3aa-4b8a-b4d2-ef4c3c72e8f3)
 
-**Program.cs**: This is the entry point of the application. 
+
+
+**wwwroot**
+
+This folder contains static files like HTML, CSS, JavaScript, and image files. It's the root for web server requests.
+
+**Controllers**
+
+In an MVC (Model-View-Controller) application, this folder contains the controller classes. Controllers handle user input and interactions, and return responses.
+
+**Models**
+
+This folder holds the classes that represent the data of the application and the logic to manage that data. It's part of the MVC pattern.
+
+**Views**
+
+In MVC, the Views folder contains the Razor view files (.cshtml). These files combine HTML markup with C# code for dynamic rendering of content.
+
+**Properties**
+
+Contains configuration files, like launchSettings.json, which includes settings for launching the app, like environment variables and application URL.
+
+**Dependencies**
+
+This section in your solution explorer lists the packages, frameworks, and projects your app depends on.
+
+**Optional Folders**
+
+**Areas**: Used for organizing related functionality into a group, like admin panels.
+
+**Migrations**: For Entity Framework Core, contains database migration files.
+
+**Data**: Contains data access related code, often includes a **DbContext** class for **Entity Framework Core**.
+
+## 3. Workflow after running the WebApp
+
+### 3.1. Program.cs file is the entry point of the application
 
 It sets up the web host and starts the application.
 
