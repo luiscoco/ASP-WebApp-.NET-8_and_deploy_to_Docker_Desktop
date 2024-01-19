@@ -265,7 +265,7 @@ Creating and using a **self-signed certificate** for local development involves 
 
 This process can vary slightly depending on your operating system. I'll outline the general steps and provide guidance for **Windows**:
 
-**6.1. Generate a Certificate Using PowerShell**:
+### 6.1. Generate a Certificate Using PowerShell
 
 You can use PowerShell to create a self-signed certificate:
 
@@ -281,7 +281,7 @@ We copy the **Thumbprint**. We need it to look for our certificate inside the Ma
 
 This command creates a certificate for localhost and places it in the local machine's certificate store.
 
-**6.2. Export the Certificate**:
+### 6.2. Export the Certificate
 
 We look for the application **Manage Computer Certificates** (**Microsoft Management Console (MMC)**) and we run it
 
@@ -316,7 +316,7 @@ We select the option **Yes, export the private key**
 
 
 
-**6.3. Trust the Certificate**:
+### 6.3. Trust the Certificate**
 
 You can trust the certificate by adding it to the "Trusted Root Certification Authorities" store, either through MMC or PowerShell.
 
