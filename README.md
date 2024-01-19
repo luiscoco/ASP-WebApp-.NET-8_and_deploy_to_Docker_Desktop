@@ -339,7 +339,15 @@ We press the **Finish** button
 
 ### 6.3. Trust the Certificate**
 
-You can trust the certificate by adding it to the "Trusted Root Certification Authorities" store, either through MMC or PowerShell.
+You can trust the certificate by adding it to the "**Trusted Root Certification Authorities**" store, either through MMC or PowerShell.
+
+We select the certificate and right click on it and select the **copy** option
+
+![image](https://github.com/luiscoco/ASP-WebApp-.NET-8_and_deploy_to_Docker_Desktop/assets/32194879/a4167035-652f-4181-ae5e-6853018df42e)
+
+We select the **Certificates** folder inside the folder **Trusted Root Certification Authorities** and we right click on it and select the option **paste**
+
+![image](https://github.com/luiscoco/ASP-WebApp-.NET-8_and_deploy_to_Docker_Desktop/assets/32194879/5dc7e2fc-1f17-4bdd-88da-fae370373033)
 
 ### 6.4. Configure ASP.NET Core (appsettings.json)
 
