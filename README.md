@@ -18,4 +18,9 @@ We chose the new project main features
 
 ![image](https://github.com/luiscoco/ASP-WebApp-.NET-8_and_deploy_to_Docker_Desktop/assets/32194879/d5e90836-95b7-4a1c-ba04-695a5dd8c08b)
 
+## 2. Project folder structure and main files description
+
+### 2.1. Default Folder Structure
+
+![image](https://github.com/luiscoco/ASP-WebApp-.NET-8_and_deploy_to_Docker_Desktop/assets/32194879/1213f16a-b3aa-4b8a-b4d2-ef4c3c72e8f3)
 
