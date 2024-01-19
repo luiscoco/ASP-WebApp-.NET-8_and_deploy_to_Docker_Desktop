@@ -289,7 +289,9 @@ We look for the application "**Manage Computer Certificates**" and we run it
 
 ![image](https://github.com/luiscoco/ASP-WebApp-.NET-8_and_deploy_to_Docker_Desktop/assets/32194879/94f217de-bd15-4349-9ce4-00357005722b)
 
-We 
+We search for the new certificate inside the **Personal/Certificates** folder, also **Issue To: localhot** and with the **Thumbprint**: 8CC1EAD679D28909645182A946212D1126AB9192
+
+
 
 You need to export the certificate to a **.pfx** file with a password. You can do this through the Microsoft Management Console (MMC) or PowerShell.
 
