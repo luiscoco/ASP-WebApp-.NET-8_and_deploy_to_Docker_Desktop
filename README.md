@@ -1,4 +1,4 @@
-# How to create my first ASP WebApp with .NET 8 and how to deploy to Docker Desktop (in your local laptop)
+# How to create my first ASP WebApp with .NET 8 and deploy to Docker Desktop (in your local laptop)
 
 ## 1. Run Visual Studio and create the WebApp
 
