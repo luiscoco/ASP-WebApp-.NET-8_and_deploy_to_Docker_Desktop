@@ -273,11 +273,17 @@ You can use PowerShell to create a self-signed certificate:
 New-SelfSignedCertificate -DnsName localhost -CertStoreLocation cert:\LocalMachine\My
 ```
 
+We copy the **Thumbprint**. We need it to look for our certificate inside the Manage Certificates Computer application in the **Personal/Certificates** folder 
+
+![image](https://github.com/luiscoco/ASP-WebApp-.NET-8_and_deploy_to_Docker_Desktop/assets/32194879/c66e3a06-e7b9-4e18-b391-e1ab0a54a85e)
+
+**Thumbprint**: 8CC1EAD679D28909645182A946212D1126AB9192
+
 This command creates a certificate for localhost and places it in the local machine's certificate store.
 
 **Export the Certificate**:
 
-We look for the application "Manage Computer Certificates" and we run it
+We look for the application "**Manage Computer Certificates**" and we run it
 
 ![image](https://github.com/luiscoco/ASP-WebApp-.NET-8_and_deploy_to_Docker_Desktop/assets/32194879/dd8150f1-f14c-479a-9343-9b579417818a)
 
