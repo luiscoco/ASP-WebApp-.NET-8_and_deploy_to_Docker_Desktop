@@ -237,10 +237,20 @@ We build the WebApp docker image running this command
 docker build -t webapplication1 .
 ```
 
+![image](https://github.com/luiscoco/ASP-WebApp-.NET-8_and_deploy_to_Docker_Desktop/assets/32194879/496186c8-f493-4399-9d99-a0bcca11f46e)
+
+We can verify in Docker Desktop the new image
+
+![image](https://github.com/luiscoco/ASP-WebApp-.NET-8_and_deploy_to_Docker_Desktop/assets/32194879/287b555d-28f9-48ca-8e14-0ba99cedb9bf)
+
 We run the docker image with this command
 
 ```
-docker run -d -p 8080:80 --name myapp webapplication1
+docker run -d -p 8080:8080 --name myapp webapplication1
 ```
+
+We confirm the application is running in the endpoing: http://localhost:8080
+
+
 
 
