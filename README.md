@@ -94,3 +94,39 @@ app.MapControllerRoute(
 app.Run();
 ```
 
+### 3.2. The application entry point calls the Index action inside the Home controller
+
+```csharp
+using Microsoft.AspNetCore.Mvc;
+using System.Diagnostics;
+using WebApplication1.Models;
+
+namespace WebApplication1.Controllers
+{
+    public class HomeController : Controller
+    {
+        private readonly ILogger<HomeController> _logger;
+
+        public HomeController(ILogger<HomeController> logger)
+        {
+            _logger = logger;
+        }
+
+        public IActionResult Index()
+        {
+            return View();
+        }
+```
+
+### 3.3. The Index action inside the Home controller calls the Views/Home/Index.cshtml view
+
+```cshtml
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Welcome</h1>
+    <p>Learn about <a href="https://learn.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+</div>
+```
