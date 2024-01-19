@@ -321,8 +321,21 @@ We select and input the Password: 123456
 
 ![image](https://github.com/luiscoco/ASP-WebApp-.NET-8_and_deploy_to_Docker_Desktop/assets/32194879/72ae416b-5d3a-417c-a3a0-d7523fad5ff3)
 
+We press in the **Browser** button and select the certificate name and the location to store it
 
+![image](https://github.com/luiscoco/ASP-WebApp-.NET-8_and_deploy_to_Docker_Desktop/assets/32194879/8405e6bb-5335-47f1-ad0b-374c56f76d01)
 
+We press the **Save** button
+
+![image](https://github.com/luiscoco/ASP-WebApp-.NET-8_and_deploy_to_Docker_Desktop/assets/32194879/24b2d8e3-f796-48d7-ac1c-c281342b8fbb)
+
+We click on the **Next** button
+
+![image](https://github.com/luiscoco/ASP-WebApp-.NET-8_and_deploy_to_Docker_Desktop/assets/32194879/004c5990-c21d-443f-b803-b6f511734373)
+
+We press the **Finish** button
+
+![image](https://github.com/luiscoco/ASP-WebApp-.NET-8_and_deploy_to_Docker_Desktop/assets/32194879/ea987c57-e9ce-474b-acee-e1a4789595ce)
 
 ### 6.3. Trust the Certificate**
 
