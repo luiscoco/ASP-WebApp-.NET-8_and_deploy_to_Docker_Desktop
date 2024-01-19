@@ -227,12 +227,20 @@ COPY --from=publish /app/publish .
 ENTRYPOINT ["dotnet", "WebApplication1.dll"]
 ```
 
-We right click on the project name and we select the option Open Terminal Window
+We right click on the project name and we select the option **Open in Terminal**
 
 ![image](https://github.com/luiscoco/ASP-WebApp-.NET-8_and_deploy_to_Docker_Desktop/assets/32194879/1648d596-53ef-4770-98e9-3deba5a9085a)
 
 We build the WebApp docker image running this command
 
 ```
+docker build -t webapplication1 .
+```
+
+We run the docker image with this command
 
 ```
+docker run -d -p 8080:80 --name myapp webapplication1
+```
+
+
