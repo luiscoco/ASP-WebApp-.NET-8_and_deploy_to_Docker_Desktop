@@ -369,3 +369,6 @@ COPY ["certificate.pfx", "."]
 ENTRYPOINT ["dotnet", "WebApplication1.dll"]
 ```
 
+For accessing both protocol HTTP and HTTPS comment this line: **app.UseHttpsRedirection();** in **Program.cs** file
+
+
