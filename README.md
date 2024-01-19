@@ -186,3 +186,13 @@ namespace WebApplication1.Controllers
 </body>
 </html>
 ```
+
+## 4. Adding docker support to the WebApp application
+
+We right click on the project name and we select the menu option **Add->Docker support...**
+
+![image](https://github.com/luiscoco/ASP-WebApp-.NET-8_and_deploy_to_Docker_Desktop/assets/32194879/ea5979e7-aa8b-43f3-a891-bb291da84add)
+
+We select the Linux operating system
+
+![image](https://github.com/luiscoco/ASP-WebApp-.NET-8_and_deploy_to_Docker_Desktop/assets/32194879/95ba4ba5-4e81-4f6a-9888-4a98d8e81559)
