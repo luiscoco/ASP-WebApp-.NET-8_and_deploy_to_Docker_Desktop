@@ -24,8 +24,6 @@ We chose the new project main features
 
 ![image](https://github.com/luiscoco/ASP-WebApp-.NET-8_and_deploy_to_Docker_Desktop/assets/32194879/1213f16a-b3aa-4b8a-b4d2-ef4c3c72e8f3)
 
-
-
 **wwwroot**
 
 This folder contains static files like HTML, CSS, JavaScript, and image files. It's the root for web server requests.
@@ -59,6 +57,10 @@ This section in your solution explorer lists the packages, frameworks, and proje
 **Data**: Contains data access related code, often includes a **DbContext** class for **Entity Framework Core**.
 
 ## 3. Workflow after running the WebApp
+
+This is the workflow summary:
+
+**Program.cs** is the application entry point -> **https://localhost:44327/Home/Index** -> Call Index action inside the Home controller **Controllers/HomeController.cs** -> Call Home view (**Views/Home/Index.cshtml**) -> the Index.cshtl view is Rendered inside the **Views/Shared/_Layout.cshtml** as defined in **_ViewStart.cshtml**
 
 ### 3.1. Program.cs file is the entry point of the application
 
