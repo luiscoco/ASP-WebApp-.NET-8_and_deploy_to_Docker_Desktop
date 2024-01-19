@@ -265,7 +265,7 @@ Creating and using a **self-signed certificate** for local development involves 
 
 This process can vary slightly depending on your operating system. I'll outline the general steps and provide guidance for **Windows**:
 
-**Generate a Certificate Using PowerShell**:
+**6.1. Generate a Certificate Using PowerShell**:
 
 You can use PowerShell to create a self-signed certificate:
 
@@ -281,9 +281,9 @@ We copy the **Thumbprint**. We need it to look for our certificate inside the Ma
 
 This command creates a certificate for localhost and places it in the local machine's certificate store.
 
-**Export the Certificate**:
+**6.2. Export the Certificate**:
 
-We look for the application "**Manage Computer Certificates**" and we run it
+We look for the application **Manage Computer Certificates** (**Microsoft Management Console (MMC)**) and we run it
 
 ![image](https://github.com/luiscoco/ASP-WebApp-.NET-8_and_deploy_to_Docker_Desktop/assets/32194879/dd8150f1-f14c-479a-9343-9b579417818a)
 
@@ -291,19 +291,36 @@ We look for the application "**Manage Computer Certificates**" and we run it
 
 We search for the new certificate inside the **Personal/Certificates** folder, also **Issue To: localhot** and with the **Thumbprint**: 8CC1EAD679D28909645182A946212D1126AB9192
 
+![image](https://github.com/luiscoco/ASP-WebApp-.NET-8_and_deploy_to_Docker_Desktop/assets/32194879/920401f4-b5e5-4974-9bf5-2a1f20609f47)
+
+We also check the certificate **Thumbprint**: 8CC1EAD679D28909645182A946212D1126AB9192
+
+![image](https://github.com/luiscoco/ASP-WebApp-.NET-8_and_deploy_to_Docker_Desktop/assets/32194879/24f77aaa-2d96-4aed-8045-b3d6daadef3e)
+
+![image](https://github.com/luiscoco/ASP-WebApp-.NET-8_and_deploy_to_Docker_Desktop/assets/32194879/8098ca69-c1f1-4f07-ab97-472f142b6515)
+
+You need to **export the certificate** to a **.pfx** file with a password. You can do this through the **Microsoft Management Console (MMC)** or PowerShell.
+
+We select the certificate and then select the menu option **Action->All Tasks->Export...**
+
+![image](https://github.com/luiscoco/ASP-WebApp-.NET-8_and_deploy_to_Docker_Desktop/assets/32194879/7010c69d-1a56-4ea2-a963-d49d0fe23c62)
+
+We click on the Next button
+
+![image](https://github.com/luiscoco/ASP-WebApp-.NET-8_and_deploy_to_Docker_Desktop/assets/32194879/3f30e236-389c-471e-a742-f47effd87868)
+
+We select the option **Yes, export the private key**
+
+![image](https://github.com/luiscoco/ASP-WebApp-.NET-8_and_deploy_to_Docker_Desktop/assets/32194879/06c4b24f-2781-42d4-845d-bcade7abacd4)
 
 
-You need to export the certificate to a **.pfx** file with a password. You can do this through the Microsoft Management Console (MMC) or PowerShell.
 
-Trust the Certificate:
+
+**6.3. Trust the Certificate**:
 
 You can trust the certificate by adding it to the "Trusted Root Certification Authorities" store, either through MMC or PowerShell.
 
-Configure ASP.NET Core:
-
-Update your appsettings.json or Kestrel settings to use the certificate.
-
-Using the Certificate in ASP.NET Core:
+**Configure ASP.NET Core**:
 
 In your **appsettings.json** or programmatic configuration, specify the path to the .pfx file and the password you used during export:
 
