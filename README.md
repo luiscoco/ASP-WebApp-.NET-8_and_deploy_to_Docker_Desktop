@@ -341,7 +341,7 @@ We press the **Finish** button
 
 You can trust the certificate by adding it to the "Trusted Root Certification Authorities" store, either through MMC or PowerShell.
 
-**Configure ASP.NET Core**:
+### 6.4. Configure ASP.NET Core (appsettings.json)
 
 In your **appsettings.json** or programmatic configuration, specify the path to the .pfx file and the password you used during export:
 
@@ -370,6 +370,8 @@ In your **appsettings.json** or programmatic configuration, specify the path to 
   }
 }
 ```
+
+### 6.5. Update the Dockerfile
 
 Also modify the Dockefile to copy the certificate file into the Docker image: **COPY ["certificate.pfx", "."]**
 
@@ -405,6 +407,61 @@ COPY ["certificate.pfx", "."]
 ENTRYPOINT ["dotnet", "WebApplication1.dll"]
 ```
 
+### 6.6. Update the Program.cs file
+
 For accessing both protocol HTTP and HTTPS comment this line: **app.UseHttpsRedirection();** in **Program.cs** file
+
+```csharp
+var builder = WebApplication.CreateBuilder(args);
+
+// Add services to the container.
+builder.Services.AddControllersWithViews();
+
+var app = builder.Build();
+
+// Configure the HTTP request pipeline.
+if (!app.Environment.IsDevelopment())
+{
+    app.UseExceptionHandler("/Home/Error");
+    // The default HSTS value is 30 days. You may want to change this for production scenarios, see https://aka.ms/aspnetcore-hsts.
+    app.UseHsts();
+}
+
+//app.UseHttpsRedirection();
+app.UseStaticFiles();
+
+app.UseRouting();
+
+app.UseAuthorization();
+
+app.MapControllerRoute(
+    name: "default",
+    pattern: "{controller=Home}/{action=Index}/{id?}");
+
+app.Run();
+```
+
+### 6.7. Create the Docker image
+
+We create the WebApp docker image running this command
+
+```
+docker build -t webapplication1 .
+```
+
+### 6.8. Run the Docker container
+
+We execute the following command to run the docker container
+
+```
+docker run -d -p 8080:8080 -p 8081:8081 --name myapp webapplication1
+```
+
+### 6.9. Verify the application endpoints
+
+http://localhost:8080
+
+
+https://localhost:8081
 
 
