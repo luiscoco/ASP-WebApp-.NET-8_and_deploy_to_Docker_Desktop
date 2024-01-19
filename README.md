@@ -461,7 +461,16 @@ docker run -d -p 8080:8080 -p 8081:8081 --name myapp webapplication1
 
 http://localhost:8080
 
+![image](https://github.com/luiscoco/ASP-WebApp-.NET-8_and_deploy_to_Docker_Desktop/assets/32194879/216672a4-472e-4b42-a7ec-94cdb443889e)
 
 https://localhost:8081
+
+![image](https://github.com/luiscoco/ASP-WebApp-.NET-8_and_deploy_to_Docker_Desktop/assets/32194879/1b9978f9-5724-4f19-86be-33bf8e3777e5)
+
+We also can verify the running container in the Docker Desktop
+
+![image](https://github.com/luiscoco/ASP-WebApp-.NET-8_and_deploy_to_Docker_Desktop/assets/32194879/d4cb923d-20b3-463f-b85a-f8fb2945a426)
+
+
 
 
