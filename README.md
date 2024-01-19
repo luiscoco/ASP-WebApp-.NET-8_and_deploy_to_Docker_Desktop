@@ -313,6 +313,14 @@ We select the option **Yes, export the private key**
 
 ![image](https://github.com/luiscoco/ASP-WebApp-.NET-8_and_deploy_to_Docker_Desktop/assets/32194879/06c4b24f-2781-42d4-845d-bcade7abacd4)
 
+We select the option Personal Information Exchange PFX
+
+![image](https://github.com/luiscoco/ASP-WebApp-.NET-8_and_deploy_to_Docker_Desktop/assets/32194879/3e5d889e-c1fc-41fe-9110-210532176b3d)
+
+We select and input the Password: 123456
+
+![image](https://github.com/luiscoco/ASP-WebApp-.NET-8_and_deploy_to_Docker_Desktop/assets/32194879/72ae416b-5d3a-417c-a3a0-d7523fad5ff3)
+
 
 
 
