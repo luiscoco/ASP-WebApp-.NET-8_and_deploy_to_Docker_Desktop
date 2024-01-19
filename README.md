@@ -261,29 +261,11 @@ We also see the running docker image in Docker Desktop
 
 ## 6. Run your application with protocol HTTPS
 
-Creating and using a self-signed certificate for local development involves a few steps. 
+Creating and using a **self-signed certificate** for local development involves a few steps. 
 
-This process can vary slightly depending on your operating system. 
+This process can vary slightly depending on your operating system. I'll outline the general steps and provide guidance for **Windows**:
 
-I'll outline the general steps and provide guidance for **Windows**:
-
-General Steps:
-
-Generate a Self-Signed Certificate:
-
-You need to use a tool like OpenSSL to create a self-signed SSL certificate.
-
-Configure your ASP.NET Core Application:
-
-After generating the certificate, you need to configure your ASP.NET Core application to use this certificate for HTTPS.
-
-Trust the Certificate:
-
-Since the certificate is self-signed, it won't be trusted by your system or browsers by default. You'll need to add it to your system's list of trusted certificates.
-
-Windows:
-
-Generate a Certificate Using PowerShell:
+**Generate a Certificate Using PowerShell**:
 
 You can use PowerShell to create a self-signed certificate:
 
@@ -293,9 +275,17 @@ New-SelfSignedCertificate -DnsName localhost -CertStoreLocation cert:\LocalMachi
 
 This command creates a certificate for localhost and places it in the local machine's certificate store.
 
-Export the Certificate:
+**Export the Certificate**:
 
-You need to export the certificate to a .pfx file with a password. You can do this through the Microsoft Management Console (MMC) or PowerShell.
+We look for the application "Manage Computer Certificates" and we run it
+
+![image](https://github.com/luiscoco/ASP-WebApp-.NET-8_and_deploy_to_Docker_Desktop/assets/32194879/dd8150f1-f14c-479a-9343-9b579417818a)
+
+![image](https://github.com/luiscoco/ASP-WebApp-.NET-8_and_deploy_to_Docker_Desktop/assets/32194879/94f217de-bd15-4349-9ce4-00357005722b)
+
+We 
+
+You need to export the certificate to a **.pfx** file with a password. You can do this through the Microsoft Management Console (MMC) or PowerShell.
 
 Trust the Certificate:
 
